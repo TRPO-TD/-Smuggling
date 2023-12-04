@@ -1,0 +1,34 @@
+C:\Users\timag\source\repos\CourseWork4Test\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\timag\source\repos\CourseWork4Test\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\timag\source\repos\CourseWork4Test\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\timag\source\repos\CourseWork4Test\UnitTestProject1\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\timag\source\repos\CourseWork4Test\UnitTestProject1\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\timag\source\repos\CourseWork4Test\UnitTestProject1\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\timag\source\repos\CourseWork4Test\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+C:\Users\timag\source\repos\CourseWork4Test\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+C:\Users\timag\source\repos\CourseWork4Test\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\timag\source\repos\CourseWork4Test\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\timag\source\repos\CourseWork4Test\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\timag\source\repos\CourseWork4Test\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\timag\source\repos\CourseWork4Test\UnitTestProject1\obj\Debug\UnitTestProject1.csproj.AssemblyReference.cache
+C:\Users\timag\source\repos\CourseWork4Test\UnitTestProject1\obj\Debug\UnitTestProject1.csproj.CoreCompileInputs.cache
+C:\Users\timag\source\repos\CourseWork4Test\UnitTestProject1\obj\Debug\UnitTestProject1.csproj.CopyComplete
+C:\Users\timag\source\repos\CourseWork4Test\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+C:\Users\timag\source\repos\CourseWork4Test\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\UnitTestProject1\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\UnitTestProject1\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\UnitTestProject1\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\UnitTestProject1\obj\Debug\UnitTestProject1.csproj.AssemblyReference.cache
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\UnitTestProject1\obj\Debug\UnitTestProject1.csproj.CoreCompileInputs.cache
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\UnitTestProject1\obj\Debug\UnitTestProject1.csproj.CopyComplete
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\UnitTestProject1\obj\Debug\UnitTestProject1.pdb

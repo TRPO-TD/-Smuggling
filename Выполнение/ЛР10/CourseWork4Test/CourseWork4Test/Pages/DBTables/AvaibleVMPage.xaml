@@ -1,0 +1,35 @@
+﻿<Page x:Class="CourseWork4Test.Pages.DBTables.AvaibleVMPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CourseWork4Test.Pages.DBTables"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="1280"
+      Title="AvaibleVMPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0">
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <TextBlock Grid.Row="1" Margin="25 15 0 15" FontSize="25"  HorizontalAlignment="Center">Только доступные</TextBlock>
+                <CheckBox x:Name="checkBox" VerticalAlignment="Center" Margin="25"></CheckBox>
+                <GridSplitter Width="5"></GridSplitter>
+                <TextBlock Grid.Row="1" Margin="25 15 20 15" FontSize="25"  HorizontalAlignment="Center">Поиск по видеоносителям</TextBlock>
+                <TextBox x:Name="textBox" Width="380" Margin="0 5 0 5" FontSize="18"></TextBox>
+                <Button Width="100" FontSize="18" Margin="5 5 0 5" Click="SearchOKBtn_Click">OK</Button>
+                <Button Width="100" FontSize="18" Margin="0 5 25 5" Click="CancelBtn_Click">Отмена</Button>
+            </StackPanel>
+        </StackPanel>
+
+        <DataGrid FontSize="18" x:Name="AvaibleVM" Grid.Row="1" AutoGenerateColumns="True" Margin="0 5 0 0" IsReadOnly="True"></DataGrid>
+
+        <Button Grid.Row="2" Width="200" HorizontalAlignment="Right" FontSize="26" Margin="5 5 25 10" Click="GoBackBtn_Click">Назад</Button>
+    </Grid>
+</Page>

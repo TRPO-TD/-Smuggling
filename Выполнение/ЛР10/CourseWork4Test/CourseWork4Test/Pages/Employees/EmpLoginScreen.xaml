@@ -1,0 +1,25 @@
+﻿<Page x:Class="CourseWork4Test.Pages.Employees.EmpLoginScreen"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CourseWork4Test.Pages.Employees"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="1280"
+      Title="EmpLoginScreen">
+
+    <StackPanel>
+        <TextBlock Margin="60 120 0 75" FontSize="60">Авторизация:</TextBlock>
+        
+        <StackPanel Margin="140 0 0 50" Orientation="Horizontal">
+            <Label FontSize="40" Margin="0 0 15 0" Width="160" HorizontalContentAlignment="Center">Логин:</Label>
+            <TextBox x:Name="LoginTB" Width="710" FontSize="40"></TextBox>
+        </StackPanel>
+        <StackPanel Margin="140 0 0 75" Orientation="Horizontal">
+            <Label FontSize="40" Margin="0 0 15 0" Width="160" HorizontalContentAlignment="Center">Пароль:</Label>
+            <PasswordBox x:Name="PasswordB" Width="710" FontSize="40"></PasswordBox>
+        </StackPanel>
+        <Button FontSize="40" Width="200" HorizontalAlignment="Left" Margin="225 0 0 0" Click="LoginBtn_CLick">Войти</Button>
+
+    </StackPanel>
+</Page>

@@ -1,0 +1,294 @@
+Drop Table Address_
+Drop Table Cinema
+Drop Table Cinema_Genre
+Drop Table Client
+Drop Table Client_status
+Drop Table Client_VM_applications
+Drop Table Damage_penalty
+Drop Table Deal
+Drop Table Deal_Video_media
+Drop Table Delay_penalty
+Drop Table Employee
+Drop Table Genre
+Drop Table Provider_
+Drop Table User_
+Drop Table User_type
+Drop Table Video_media
+Drop Table Video_media_order
+Drop Table Video_media_type
+
+Create Table User_type(
+ut_id tinyint PRIMARY KEY, -- <255
+ut_name nvarchar(63)
+)
+
+Create Table User_(
+u_id int identity(1,1) primary key,
+ulogin nvarchar(63) NOT NULL,
+upassword nvarchar(63) NOT NULL,
+ut_id tinyint not null REFERENCES User_type(ut_id),
+isActive bit
+)
+
+Create Table Cinema(
+c_id int identity(1,1) PRIMARY KEY,
+c_name nvarchar(260), -- по самому длинному названию (129)
+c_description nvarchar(1023)
+)
+
+Create Table Genre(
+g_id tinyint identity(1,1) PRIMARY KEY, -- <255
+g_name nvarchar(63), -- по самому длинному названию (31)
+g_description nvarchar(511)
+)
+
+Create Table Cinema_Genre(
+c_id int NOT NULL REFERENCES Cinema(c_id), -- из Cinema
+g_id tinyint NOT NULL REFERENCES Genre(g_id), -- из Genre
+PRIMARY KEY (c_id, g_id)
+)
+
+Create Table Address_(
+a_id int Identity(1,1) PRIMARY KEY,
+a_locality nvarchar(127),
+a_street nvarchar(127),
+a_building nvarchar(63)
+)
+
+Create Table Employee(
+e_id int identity(1,1) PRIMARY KEY,
+e_surname nvarchar(255) NOT NULL,
+e_name nvarchar(63),
+e_patronymic nvarchar(63),
+a_id int NOT NULL REFERENCES Address_(a_id),
+e_telNum char(18)  CHECK  (([e_telNum] like '+7 ([0-9][0-9][0-9]) [0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]')), --маска
+e_position nvarchar(63),
+e_salary float
+)
+
+Create Table Provider_(
+p_id int identity(1,1) PRIMARY KEY,
+p_title nvarchar(100) NOT NULL,
+a_id int NOT NULL REFERENCES Address_(a_id),
+p_telNum char(18)  CHECK  (([p_telNum] like '+7 ([0-9][0-9][0-9]) [0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]')), --маска
+p_surname nvarchar(63) NOT NULL,
+p_name nvarchar(63),
+p_patronymic nvarchar(63)
+)
+
+Create Table Video_media_order( 
+vmo_id int identity(1,1) PRIMARY KEY,
+vmo_tData date NOT NULL CONSTRAINT [DF_Test_TimeStampVMO] DEFAULT (GetDate()),
+vmo_tCompletionDate date,
+p_id int NOT NULL REFERENCES Provider_(p_id),
+e_id int NOT NULL REFERENCES Employee(e_id),
+vmo_isCompleted bit
+)
+
+Create Table Video_media_type(
+vmt_id int PRIMARY KEY,
+vmt_name nvarchar(15),
+vmt_description nvarchar(127)
+)
+
+Create Table Video_media( 
+vm_id int identity(1,1) PRIMARY KEY,
+c_id int NOT NULL REFERENCES Cinema(c_id),
+vmo_id int REFERENCES Video_media_order(vmo_id), -- не NOT NULL т.к. возможно некоторые носители старые, к которым нет заказа.
+vmt_id int NOT NULL REFERENCES Video_media_type(vmt_id),
+vm_dailyRentPrice float,
+vm_durability tinyint CHECK (vm_durability >=0 and vm_durability <= 2 ), -- 0,1,2 
+vm_price float
+)
+
+Create Table Client_status(
+cs_id int PRIMARY KEY,
+cs_name nvarchar(63)
+)
+
+Create Table Client(
+cl_id int identity(1,1) PRIMARY KEY,
+cl_surname nvarchar(63) NOT NULL,
+cl_name nvarchar(63),
+cl_patronymic nvarchar(63),
+a_id int NOT NULL REFERENCES Address_(a_id),
+cl_telNum char(18)  CHECK  (([cl_telNum] like '+7 ([0-9][0-9][0-9]) [0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]')), --маска
+cs_id int NOT NULL REFERENCES Client_status(cs_id)
+)
+
+Create Table Client_VM_applications(
+cvma_id int identity(1,1) PRIMARY KEY,
+cvma_name nvarchar(260) NOT NULL,
+cl_id int NOT NULL REFERENCES Client(cl_id)
+)
+
+Create Table Deal(
+d_id int identity(1,1) PRIMARY KEY,
+e_id int NOT NULL REFERENCES Employee(e_id),
+cl_id int NOT NULL REFERENCES Client(cl_id),
+d_tDate date NOT NULL CONSTRAINT [DF_Test_TimeStampDeal] DEFAULT (GetDate()),
+d_tCompletionDate date,
+d_cost float,
+d_isCompleted bit
+)
+
+Create Table Deal_Video_media(
+vm_id int NOT NULL REFERENCES Video_media(vm_id),
+d_id int NOT NULL REFERENCES Deal(d_id),
+PRIMARY KEY(vm_id, d_id)
+)
+
+Create Table Delay_penalty(
+delp_id int identity(1,1) PRIMARY KEY,
+d_id int NOT NULL REFERENCES Deal(d_id),
+delp_ammount float,
+delp_description nvarchar(511)
+)
+
+Create TABLE Damage_penalty(
+dmgp_id int identity(1,1) PRIMARY KEY,
+d_id int NOT NULL REFERENCES Deal(d_id),
+dmgp_ammount float,
+dmgp_description nvarchar(511)
+)
+
+CREATE TRIGGER tr2
+ON Deal 
+AFTER UPDATE
+AS
+UPDATE Deal
+SET d_cost = ROUND((SELECT sum(vm.vm_dailyRentPrice) 
+			 FROM Video_media AS vm
+			 LEFT OUTER JOIN Deal_Video_media AS dvm ON vm.vm_id = dvm.vm_id
+			 LEFT OUTER JOIN Deal AS d ON d.d_id = dvm.d_id
+			 WHERE d.d_id = (SELECT d_id FROM inserted))
+		  * (SELECT DATEDIFF(DAY, d_tDate, d_tCompletionDate) FROM Deal WHERE d_id = (SELECT d_id FROM inserted)),2,0)
+WHERE d_id = (SELECT d_id FROM inserted)	
+
+-- не помню
+	--SELECT	vm.vm_id as ID,
+	--		cin.c_name as Cinema,
+	--		p.p_title as 'Provider',
+	--		vm.vmo_id as 'Order ID',
+	--		vmt.vmt_name as 'Type',
+	--		vm.vm_dailyRentPrice as 'Rent price',
+	--		vm.vm_durability as 'Durability',
+	--		vm.vm_price as Price
+	
+	--		FROM Video_media AS vm
+	--		JOIN Video_media_type AS vmt ON  vm.vmt_id = vmt.vmt_id
+	--		JOIN Cinema as cin ON cin.c_id = vm.c_id
+	--		Left JOIN Video_media_order as vmo ON vm.vmo_id = vmo.vmo_id
+	--		Left JOIN Provider_ as p ON p.p_id = vmo.p_id
+
+	--SELECT	vm.vm_id as ID,
+	--		cin.c_name as 'Фильм',
+	--		vmt.vmt_name as 'Тип видеоносителя',
+	--		vm.vm_dailyRentPrice as 'Цена аренды, сут./руб.'
+	
+	--		FROM Video_media AS vm
+	--		JOIN Video_media_type AS vmt ON vm.vmt_id = vmt.vmt_id
+	--		JOIN Cinema as cin ON cin.c_id = vm.c_id
+	
+	-- CREATE VIEW FilmForUser_v AS
+			-- SELECT	vm.vm_id as ID,
+				-- cin.c_name as 'Фильм',
+				-- vmt.vmt_name as 'Тип видеоносителя',
+				-- vm.vm_dailyRentPrice as 'Цена аренды, сут./руб.'
+	
+			-- FROM Video_media AS vm
+			-- JOIN Video_media_type AS vmt ON vm.vmt_id = vmt.vmt_id
+			-- JOIN Cinema as cin ON cin.c_id = vm.c_id 
+			-- WHERE cin.c_name = 'Крёстный отец'
+
+--все доступные видеоносители (запрос для сотрудника)
+SELECT vm.vm_id AS ID, 
+     cin.c_name as 'Фильм', 
+     p.p_title as 'Поставщик', 
+     vm.vmo_id as 'Номер поставки (ID)', 
+     vmt.vmt_name as 'Тип видеоносителя', 
+     vm.vm_dailyRentPrice as 'Цена аренды в сутки', 
+     vm.vm_durability as 'Прочность', 
+     vm.vm_price as 'Себестоимость' 
+FROM Video_media AS vm  
+     JOIN Video_media_type AS vmt ON  vm.vmt_id = vmt.vmt_id 
+     JOIN Cinema as cin ON cin.c_id = vm.c_id 
+     Left JOIN Video_media_order as vmo ON vm.vmo_id = vmo.vmo_id 
+     Left JOIN Provider_ as p ON p.p_id = vmo.p_id 
+     WHERE (NOT EXISTS (SELECT * FROM Deal_Video_media AS dvm WHERE vm.vm_id = dvm.vm_id) AND cin.c_name LIKE '%%') 
+     UNION 
+SELECT vm.vm_id AS ID, 
+     cin.c_name as 'Фильм', 
+     p.p_title as 'Поставщик', 
+     vm.vmo_id as 'Номер поставки (ID)', 
+     vmt.vmt_name as 'Тип видеоносителя', 
+     vm.vm_dailyRentPrice as 'Цена аренды в сутки', 
+     vm.vm_durability as 'Прочность', 
+     vm.vm_price as 'Себестоимость' 
+FROM Video_media AS vm  
+     JOIN Video_media_type AS vmt ON  vm.vmt_id = vmt.vmt_id 
+     JOIN Cinema as cin ON cin.c_id = vm.c_id 
+     Left JOIN Video_media_order as vmo ON vm.vmo_id = vmo.vmo_id 
+     Left JOIN Provider_ as p ON p.p_id = vmo.p_id 
+     LEFT OUTER JOIN Deal_Video_media AS dvm ON vm.vm_id = dvm.vm_id 
+     LEFT OUTER JOIN Deal AS d ON d.d_id = dvm.d_id 
+     WHERE (d.d_isCompleted = 1 AND cin.c_name LIKE '%%')
+		
+		
+		
+		-- ДЛЯ КЛИЕНТОВ
+		-- только СHECKED (без поиска)
+		SELECT	vm.vm_id AS ID,
+				cin.c_name as Cinema,
+				vmt.vmt_name as 'Type',
+				vm.vm_dailyRentPrice as 'Rent price'	
+		FROM Video_media AS vm 
+			JOIN Video_media_type AS vmt ON  vm.vmt_id = vmt.vmt_id
+			JOIN Cinema as cin ON cin.c_id = vm.c_id
+		WHERE NOT EXISTS (SELECT * FROM Deal_Video_media AS dvm WHERE vm.vm_id = dvm.vm_id)
+		UNION
+		SELECT	vm.vm_id AS ID,
+				cin.c_name as Cinema,
+				vmt.vmt_name as 'Type',
+				vm.vm_dailyRentPrice as 'Rent price'	
+		FROM Video_media AS vm 
+			JOIN Video_media_type AS vmt ON  vm.vmt_id = vmt.vmt_id
+			JOIN Cinema as cin ON cin.c_id = vm.c_id
+		LEFT OUTER JOIN Deal_Video_media AS dvm ON vm.vm_id = dvm.vm_id
+		LEFT OUTER JOIN Deal AS d ON d.d_id = dvm.d_id
+		WHERE d.d_isCompleted = 1
+		
+		
+-- Поиск доступных видеоносителей (запрос для клиентов)
+SELECT	vm.vm_id AS ID,
+		cin.c_name as Cinema,
+		vmt.vmt_name as 'Type',
+		vm.vm_dailyRentPrice as 'Rent price'	
+FROM Video_media AS vm 
+		JOIN Video_media_type AS vmt ON  vm.vmt_id = vmt.vmt_id
+		JOIN Cinema as cin ON cin.c_id = vm.c_id
+		WHERE (NOT EXISTS (SELECT * FROM Deal_Video_media AS dvm WHERE vm.vm_id = dvm.vm_id) AND cin.c_name = '%от%')
+		UNION
+SELECT	vm.vm_id AS ID,
+		cin.c_name as Cinema,
+		vmt.vmt_name as 'Type',
+		vm.vm_dailyRentPrice as 'Rent price'	
+FROM Video_media AS vm 
+		JOIN Video_media_type AS vmt ON  vm.vmt_id = vmt.vmt_id
+		JOIN Cinema as cin ON cin.c_id = vm.c_id
+		LEFT OUTER JOIN Deal_Video_media AS dvm ON vm.vm_id = dvm.vm_id
+		LEFT OUTER JOIN Deal AS d ON d.d_id = dvm.d_id
+		WHERE (d.d_isCompleted = 1 AND cin.c_name LIKE '%от%')
+
+		-- Поиск без CHECKED
+		SELECT	vm.vm_id as ID,
+				cin.c_name as 'Фильм',
+				vmt.vmt_name as 'Тип видеоносителя',
+				vm.vm_dailyRentPrice as 'Цена аренды, сут./руб.'
+	
+			FROM Video_media AS vm
+			JOIN Video_media_type AS vmt ON vm.vmt_id = vmt.vmt_id
+			JOIN Cinema as cin ON cin.c_id = vm.c_id 
+			WHERE cin.c_name LIKE '%от%'
+		
+

@@ -1,0 +1,518 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="courseWork4TRPO" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Address_">
+    <Key>
+      <PropertyRef Name="a_id" />
+    </Key>
+    <Property Name="a_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="a_locality" Type="String" MaxLength="127" FixedLength="false" Unicode="true" />
+    <Property Name="a_street" Type="String" MaxLength="127" FixedLength="false" Unicode="true" />
+    <Property Name="a_building" Type="String" MaxLength="63" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Client" Relationship="Self.FK__Client__a_id__6CD828CA" FromRole="Address_" ToRole="Client" />
+    <NavigationProperty Name="Employee" Relationship="Self.FK__Employee__a_id__56E8E7AB" FromRole="Address_" ToRole="Employee" />
+    <NavigationProperty Name="Provider_" Relationship="Self.FK__Provider___a_id__5AB9788F" FromRole="Address_" ToRole="Provider_" />
+  </EntityType>
+  <EntityType Name="Cinema">
+    <Key>
+      <PropertyRef Name="c_id" />
+    </Key>
+    <Property Name="c_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="c_name" Type="String" MaxLength="260" FixedLength="false" Unicode="true" />
+    <Property Name="c_description" Type="String" MaxLength="1023" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Video_media" Relationship="Self.FK__Video_medi__c_id__65370702" FromRole="Cinema" ToRole="Video_media" />
+    <NavigationProperty Name="Genre" Relationship="Self.Cinema_Genre" FromRole="Cinema" ToRole="Genre" />
+  </EntityType>
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="cl_id" />
+    </Key>
+    <Property Name="cl_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cl_surname" Type="String" MaxLength="63" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="cl_name" Type="String" MaxLength="63" FixedLength="false" Unicode="true" />
+    <Property Name="cl_patronymic" Type="String" MaxLength="63" FixedLength="false" Unicode="true" />
+    <Property Name="a_id" Type="Int32" Nullable="false" />
+    <Property Name="cl_telNum" Type="String" MaxLength="18" FixedLength="true" Unicode="false" />
+    <Property Name="cs_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Address_" Relationship="Self.FK__Client__a_id__6CD828CA" FromRole="Client" ToRole="Address_" />
+    <NavigationProperty Name="Client_status" Relationship="Self.FK__Client__cs_id__6EC0713C" FromRole="Client" ToRole="Client_status" />
+    <NavigationProperty Name="Client_VM_applications" Relationship="Self.FK__Client_VM__cl_id__719CDDE7" FromRole="Client" ToRole="Client_VM_applications" />
+    <NavigationProperty Name="Deal" Relationship="Self.FK__Deal__cl_id__756D6ECB" FromRole="Client" ToRole="Deal" />
+  </EntityType>
+  <EntityType Name="Client_status">
+    <Key>
+      <PropertyRef Name="cs_id" />
+    </Key>
+    <Property Name="cs_id" Type="Int32" Nullable="false" />
+    <Property Name="cs_name" Type="String" MaxLength="63" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Client" Relationship="Self.FK__Client__cs_id__6EC0713C" FromRole="Client_status" ToRole="Client" />
+  </EntityType>
+  <EntityType Name="Client_VM_applications">
+    <Key>
+      <PropertyRef Name="cvma_id" />
+    </Key>
+    <Property Name="cvma_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cvma_name" Type="String" MaxLength="260" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="cl_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Client" Relationship="Self.FK__Client_VM__cl_id__719CDDE7" FromRole="Client_VM_applications" ToRole="Client" />
+  </EntityType>
+  <EntityType Name="Damage_penalty">
+    <Key>
+      <PropertyRef Name="dmgp_id" />
+    </Key>
+    <Property Name="dmgp_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="d_id" Type="Int32" Nullable="false" />
+    <Property Name="dmgp_ammount" Type="Double" />
+    <Property Name="dmgp_description" Type="String" MaxLength="511" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Deal" Relationship="Self.FK__Damage_pen__d_id__7FEAFD3E" FromRole="Damage_penalty" ToRole="Deal" />
+  </EntityType>
+  <EntityType Name="Deal">
+    <Key>
+      <PropertyRef Name="d_id" />
+    </Key>
+    <Property Name="d_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="e_id" Type="Int32" Nullable="false" />
+    <Property Name="cl_id" Type="Int32" Nullable="false" />
+    <Property Name="d_tDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="d_tCompletionDate" Type="DateTime" Precision="0" />
+    <Property Name="d_cost" Type="Double" />
+    <Property Name="d_isCompleted" Type="Boolean" />
+    <NavigationProperty Name="Client" Relationship="Self.FK__Deal__cl_id__756D6ECB" FromRole="Deal" ToRole="Client" />
+    <NavigationProperty Name="Damage_penalty" Relationship="Self.FK__Damage_pen__d_id__7FEAFD3E" FromRole="Deal" ToRole="Damage_penalty" />
+    <NavigationProperty Name="Employee" Relationship="Self.FK__Deal__e_id__74794A92" FromRole="Deal" ToRole="Employee" />
+    <NavigationProperty Name="Delay_penalty" Relationship="Self.FK__Delay_pena__d_id__7D0E9093" FromRole="Deal" ToRole="Delay_penalty" />
+    <NavigationProperty Name="Video_media" Relationship="Self.Deal_Video_media" FromRole="Deal" ToRole="Video_media" />
+  </EntityType>
+  <EntityType Name="Delay_penalty">
+    <Key>
+      <PropertyRef Name="delp_id" />
+    </Key>
+    <Property Name="delp_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="d_id" Type="Int32" Nullable="false" />
+    <Property Name="delp_ammount" Type="Double" />
+    <Property Name="delp_description" Type="String" MaxLength="511" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Deal" Relationship="Self.FK__Delay_pena__d_id__7D0E9093" FromRole="Delay_penalty" ToRole="Deal" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="e_id" />
+    </Key>
+    <Property Name="e_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="e_surname" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="e_name" Type="String" MaxLength="63" FixedLength="false" Unicode="true" />
+    <Property Name="e_patronymic" Type="String" MaxLength="63" FixedLength="false" Unicode="true" />
+    <Property Name="a_id" Type="Int32" Nullable="false" />
+    <Property Name="e_telNum" Type="String" MaxLength="18" FixedLength="true" Unicode="false" />
+    <Property Name="e_position" Type="String" MaxLength="63" FixedLength="false" Unicode="true" />
+    <Property Name="e_salary" Type="Double" />
+    <NavigationProperty Name="Address_" Relationship="Self.FK__Employee__a_id__56E8E7AB" FromRole="Employee" ToRole="Address_" />
+    <NavigationProperty Name="Deal" Relationship="Self.FK__Deal__e_id__74794A92" FromRole="Employee" ToRole="Deal" />
+    <NavigationProperty Name="Video_media_order" Relationship="Self.FK__Video_medi__e_id__607251E5" FromRole="Employee" ToRole="Video_media_order" />
+  </EntityType>
+  <EntityType Name="Genre">
+    <Key>
+      <PropertyRef Name="g_id" />
+    </Key>
+    <Property Name="g_id" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="g_name" Type="String" MaxLength="63" FixedLength="false" Unicode="true" />
+    <Property Name="g_description" Type="String" MaxLength="511" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Cinema" Relationship="Self.Cinema_Genre" FromRole="Genre" ToRole="Cinema" />
+  </EntityType>
+  <EntityType Name="Provider_">
+    <Key>
+      <PropertyRef Name="p_id" />
+    </Key>
+    <Property Name="p_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="p_title" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="a_id" Type="Int32" Nullable="false" />
+    <Property Name="p_telNum" Type="String" MaxLength="18" FixedLength="true" Unicode="false" />
+    <Property Name="p_surname" Type="String" MaxLength="63" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="p_name" Type="String" MaxLength="63" FixedLength="false" Unicode="true" />
+    <Property Name="p_patronymic" Type="String" MaxLength="63" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Address_" Relationship="Self.FK__Provider___a_id__5AB9788F" FromRole="Provider_" ToRole="Address_" />
+    <NavigationProperty Name="Video_media_order" Relationship="Self.FK__Video_medi__p_id__5F7E2DAC" FromRole="Provider_" ToRole="Video_media_order" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="User_">
+    <Key>
+      <PropertyRef Name="u_id" />
+    </Key>
+    <Property Name="u_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ulogin" Type="String" MaxLength="63" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="upassword" Type="String" MaxLength="63" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ut_id" Type="Byte" Nullable="false" />
+    <Property Name="isActive" Type="Boolean" />
+    <NavigationProperty Name="User_type" Relationship="Self.FK__User___ut_id__4A8310C6" FromRole="User_" ToRole="User_type" />
+  </EntityType>
+  <EntityType Name="User_type">
+    <Key>
+      <PropertyRef Name="ut_id" />
+    </Key>
+    <Property Name="ut_id" Type="Byte" Nullable="false" />
+    <Property Name="ut_name" Type="String" MaxLength="63" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="User_" Relationship="Self.FK__User___ut_id__4A8310C6" FromRole="User_type" ToRole="User_" />
+  </EntityType>
+  <EntityType Name="Video_media">
+    <Key>
+      <PropertyRef Name="vm_id" />
+    </Key>
+    <Property Name="vm_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="c_id" Type="Int32" Nullable="false" />
+    <Property Name="vmo_id" Type="Int32" />
+    <Property Name="vmt_id" Type="Int32" Nullable="false" />
+    <Property Name="vm_dailyRentPrice" Type="Double" />
+    <Property Name="vm_durability" Type="Byte" />
+    <Property Name="vm_price" Type="Double" />
+    <NavigationProperty Name="Cinema" Relationship="Self.FK__Video_medi__c_id__65370702" FromRole="Video_media" ToRole="Cinema" />
+    <NavigationProperty Name="Video_media_order" Relationship="Self.FK__Video_med__vmo_i__662B2B3B" FromRole="Video_media" ToRole="Video_media_order" />
+    <NavigationProperty Name="Video_media_type" Relationship="Self.FK__Video_med__vmt_i__671F4F74" FromRole="Video_media" ToRole="Video_media_type" />
+    <NavigationProperty Name="Deal" Relationship="Self.Deal_Video_media" FromRole="Video_media" ToRole="Deal" />
+  </EntityType>
+  <EntityType Name="Video_media_order">
+    <Key>
+      <PropertyRef Name="vmo_id" />
+    </Key>
+    <Property Name="vmo_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="vmo_tData" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="vmo_tCompletionDate" Type="DateTime" Precision="0" />
+    <Property Name="p_id" Type="Int32" Nullable="false" />
+    <Property Name="e_id" Type="Int32" Nullable="false" />
+    <Property Name="vmo_isCompleted" Type="Boolean" />
+    <NavigationProperty Name="Employee" Relationship="Self.FK__Video_medi__e_id__607251E5" FromRole="Video_media_order" ToRole="Employee" />
+    <NavigationProperty Name="Provider_" Relationship="Self.FK__Video_medi__p_id__5F7E2DAC" FromRole="Video_media_order" ToRole="Provider_" />
+    <NavigationProperty Name="Video_media" Relationship="Self.FK__Video_med__vmo_i__662B2B3B" FromRole="Video_media_order" ToRole="Video_media" />
+  </EntityType>
+  <EntityType Name="Video_media_type">
+    <Key>
+      <PropertyRef Name="vmt_id" />
+    </Key>
+    <Property Name="vmt_id" Type="Int32" Nullable="false" />
+    <Property Name="vmt_name" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="vmt_description" Type="String" MaxLength="127" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Video_media" Relationship="Self.FK__Video_med__vmt_i__671F4F74" FromRole="Video_media_type" ToRole="Video_media" />
+  </EntityType>
+  <Association Name="FK__Client__a_id__6CD828CA">
+    <End Role="Address_" Type="Self.Address_" Multiplicity="1" />
+    <End Role="Client" Type="Self.Client" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Address_">
+        <PropertyRef Name="a_id" />
+      </Principal>
+      <Dependent Role="Client">
+        <PropertyRef Name="a_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Employee__a_id__56E8E7AB">
+    <End Role="Address_" Type="Self.Address_" Multiplicity="1" />
+    <End Role="Employee" Type="Self.Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Address_">
+        <PropertyRef Name="a_id" />
+      </Principal>
+      <Dependent Role="Employee">
+        <PropertyRef Name="a_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Provider___a_id__5AB9788F">
+    <End Role="Address_" Type="Self.Address_" Multiplicity="1" />
+    <End Role="Provider_" Type="Self.Provider_" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Address_">
+        <PropertyRef Name="a_id" />
+      </Principal>
+      <Dependent Role="Provider_">
+        <PropertyRef Name="a_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Video_medi__c_id__65370702">
+    <End Role="Cinema" Type="Self.Cinema" Multiplicity="1" />
+    <End Role="Video_media" Type="Self.Video_media" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cinema">
+        <PropertyRef Name="c_id" />
+      </Principal>
+      <Dependent Role="Video_media">
+        <PropertyRef Name="c_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Client__cs_id__6EC0713C">
+    <End Role="Client_status" Type="Self.Client_status" Multiplicity="1" />
+    <End Role="Client" Type="Self.Client" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client_status">
+        <PropertyRef Name="cs_id" />
+      </Principal>
+      <Dependent Role="Client">
+        <PropertyRef Name="cs_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Client_VM__cl_id__719CDDE7">
+    <End Role="Client" Type="Self.Client" Multiplicity="1" />
+    <End Role="Client_VM_applications" Type="Self.Client_VM_applications" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="cl_id" />
+      </Principal>
+      <Dependent Role="Client_VM_applications">
+        <PropertyRef Name="cl_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Deal__cl_id__756D6ECB">
+    <End Role="Client" Type="Self.Client" Multiplicity="1" />
+    <End Role="Deal" Type="Self.Deal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="cl_id" />
+      </Principal>
+      <Dependent Role="Deal">
+        <PropertyRef Name="cl_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Damage_pen__d_id__7FEAFD3E">
+    <End Role="Deal" Type="Self.Deal" Multiplicity="1" />
+    <End Role="Damage_penalty" Type="Self.Damage_penalty" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Deal">
+        <PropertyRef Name="d_id" />
+      </Principal>
+      <Dependent Role="Damage_penalty">
+        <PropertyRef Name="d_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Deal__e_id__74794A92">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+    <End Role="Deal" Type="Self.Deal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="e_id" />
+      </Principal>
+      <Dependent Role="Deal">
+        <PropertyRef Name="e_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Delay_pena__d_id__7D0E9093">
+    <End Role="Deal" Type="Self.Deal" Multiplicity="1" />
+    <End Role="Delay_penalty" Type="Self.Delay_penalty" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Deal">
+        <PropertyRef Name="d_id" />
+      </Principal>
+      <Dependent Role="Delay_penalty">
+        <PropertyRef Name="d_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Video_medi__e_id__607251E5">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+    <End Role="Video_media_order" Type="Self.Video_media_order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="e_id" />
+      </Principal>
+      <Dependent Role="Video_media_order">
+        <PropertyRef Name="e_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Video_medi__p_id__5F7E2DAC">
+    <End Role="Provider_" Type="Self.Provider_" Multiplicity="1" />
+    <End Role="Video_media_order" Type="Self.Video_media_order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Provider_">
+        <PropertyRef Name="p_id" />
+      </Principal>
+      <Dependent Role="Video_media_order">
+        <PropertyRef Name="p_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__User___ut_id__4A8310C6">
+    <End Role="User_type" Type="Self.User_type" Multiplicity="1" />
+    <End Role="User_" Type="Self.User_" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User_type">
+        <PropertyRef Name="ut_id" />
+      </Principal>
+      <Dependent Role="User_">
+        <PropertyRef Name="ut_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Video_med__vmo_i__662B2B3B">
+    <End Role="Video_media_order" Type="Self.Video_media_order" Multiplicity="0..1" />
+    <End Role="Video_media" Type="Self.Video_media" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Video_media_order">
+        <PropertyRef Name="vmo_id" />
+      </Principal>
+      <Dependent Role="Video_media">
+        <PropertyRef Name="vmo_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Video_med__vmt_i__671F4F74">
+    <End Role="Video_media_type" Type="Self.Video_media_type" Multiplicity="1" />
+    <End Role="Video_media" Type="Self.Video_media" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Video_media_type">
+        <PropertyRef Name="vmt_id" />
+      </Principal>
+      <Dependent Role="Video_media">
+        <PropertyRef Name="vmt_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Cinema_Genre">
+    <End Role="Cinema" Type="Self.Cinema" Multiplicity="*" />
+    <End Role="Genre" Type="Self.Genre" Multiplicity="*" />
+  </Association>
+  <Association Name="Deal_Video_media">
+    <End Role="Video_media" Type="Self.Video_media" Multiplicity="*" />
+    <End Role="Deal" Type="Self.Deal" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="courseWork4TRPOEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Address_" EntityType="Self.Address_" />
+    <EntitySet Name="Cinema" EntityType="Self.Cinema" />
+    <EntitySet Name="Client" EntityType="Self.Client" />
+    <EntitySet Name="Client_status" EntityType="Self.Client_status" />
+    <EntitySet Name="Client_VM_applications" EntityType="Self.Client_VM_applications" />
+    <EntitySet Name="Damage_penalty" EntityType="Self.Damage_penalty" />
+    <EntitySet Name="Deal" EntityType="Self.Deal" />
+    <EntitySet Name="Delay_penalty" EntityType="Self.Delay_penalty" />
+    <EntitySet Name="Employee" EntityType="Self.Employee" />
+    <EntitySet Name="Genre" EntityType="Self.Genre" />
+    <EntitySet Name="Provider_" EntityType="Self.Provider_" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="User_" EntityType="Self.User_" />
+    <EntitySet Name="User_type" EntityType="Self.User_type" />
+    <EntitySet Name="Video_media" EntityType="Self.Video_media" />
+    <EntitySet Name="Video_media_order" EntityType="Self.Video_media_order" />
+    <EntitySet Name="Video_media_type" EntityType="Self.Video_media_type" />
+    <AssociationSet Name="FK__Client__a_id__6CD828CA" Association="Self.FK__Client__a_id__6CD828CA">
+      <End Role="Address_" EntitySet="Address_" />
+      <End Role="Client" EntitySet="Client" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Employee__a_id__56E8E7AB" Association="Self.FK__Employee__a_id__56E8E7AB">
+      <End Role="Address_" EntitySet="Address_" />
+      <End Role="Employee" EntitySet="Employee" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Provider___a_id__5AB9788F" Association="Self.FK__Provider___a_id__5AB9788F">
+      <End Role="Address_" EntitySet="Address_" />
+      <End Role="Provider_" EntitySet="Provider_" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Video_medi__c_id__65370702" Association="Self.FK__Video_medi__c_id__65370702">
+      <End Role="Cinema" EntitySet="Cinema" />
+      <End Role="Video_media" EntitySet="Video_media" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Client__cs_id__6EC0713C" Association="Self.FK__Client__cs_id__6EC0713C">
+      <End Role="Client_status" EntitySet="Client_status" />
+      <End Role="Client" EntitySet="Client" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Client_VM__cl_id__719CDDE7" Association="Self.FK__Client_VM__cl_id__719CDDE7">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="Client_VM_applications" EntitySet="Client_VM_applications" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Deal__cl_id__756D6ECB" Association="Self.FK__Deal__cl_id__756D6ECB">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="Deal" EntitySet="Deal" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Damage_pen__d_id__7FEAFD3E" Association="Self.FK__Damage_pen__d_id__7FEAFD3E">
+      <End Role="Deal" EntitySet="Deal" />
+      <End Role="Damage_penalty" EntitySet="Damage_penalty" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Deal__e_id__74794A92" Association="Self.FK__Deal__e_id__74794A92">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="Deal" EntitySet="Deal" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Delay_pena__d_id__7D0E9093" Association="Self.FK__Delay_pena__d_id__7D0E9093">
+      <End Role="Deal" EntitySet="Deal" />
+      <End Role="Delay_penalty" EntitySet="Delay_penalty" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Video_medi__e_id__607251E5" Association="Self.FK__Video_medi__e_id__607251E5">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="Video_media_order" EntitySet="Video_media_order" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Video_medi__p_id__5F7E2DAC" Association="Self.FK__Video_medi__p_id__5F7E2DAC">
+      <End Role="Provider_" EntitySet="Provider_" />
+      <End Role="Video_media_order" EntitySet="Video_media_order" />
+    </AssociationSet>
+    <AssociationSet Name="FK__User___ut_id__4A8310C6" Association="Self.FK__User___ut_id__4A8310C6">
+      <End Role="User_type" EntitySet="User_type" />
+      <End Role="User_" EntitySet="User_" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Video_med__vmo_i__662B2B3B" Association="Self.FK__Video_med__vmo_i__662B2B3B">
+      <End Role="Video_media_order" EntitySet="Video_media_order" />
+      <End Role="Video_media" EntitySet="Video_media" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Video_med__vmt_i__671F4F74" Association="Self.FK__Video_med__vmt_i__671F4F74">
+      <End Role="Video_media_type" EntitySet="Video_media_type" />
+      <End Role="Video_media" EntitySet="Video_media" />
+    </AssociationSet>
+    <AssociationSet Name="Cinema_Genre" Association="Self.Cinema_Genre">
+      <End Role="Cinema" EntitySet="Cinema" />
+      <End Role="Genre" EntitySet="Genre" />
+    </AssociationSet>
+    <AssociationSet Name="Deal_Video_media" Association="Self.Deal_Video_media">
+      <End Role="Video_media" EntitySet="Video_media" />
+      <End Role="Deal" EntitySet="Deal" />
+    </AssociationSet>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(courseWork4TRPO.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(courseWork4TRPO.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+  </EntityContainer>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+</Schema>

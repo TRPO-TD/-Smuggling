@@ -1,0 +1,28 @@
+﻿<Page x:Class="CourseWork4Test.Pages.Employees.SalesManagerMain"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CourseWork4Test.Pages.Employees"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="1280"
+      Title="SalesManagerMain">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" FontSize="56" Margin="50" HorizontalAlignment="Center" >Добро пожаловать, менеджер продаж!</Label>
+        <StackPanel Grid.Row="1" Margin="200 0 200 5" VerticalAlignment="Center">
+            <Button x:Name="ToClientTableBtn" FontSize="24" Margin="9" Click="ToClientTableBtn_Click">Открыть страницу клиентов</Button>
+            <Button x:Name="ToDealCreationBtn" FontSize="24" Margin="9" Click="ToDealCreationBtn_Click">Открыть страницу сделок</Button>
+            <Button x:Name="ToProviderTableBtn" FontSize="24" Margin="9" Click="ToProviderTableBtn_Click">Открыть страницу поставщиков</Button>
+            <Button x:Name="ToAddressTableBtn" FontSize="24" Margin="9" Click="ToAddressTableBtn_Click">Открыть страницу адресов</Button>
+            <Button x:Name="ToVideoMediaTableBtn" FontSize="24" Margin="9" Click="ToVideoMediaTableBtn_Click">Открыть страницу видеоносителей</Button>
+            <Button x:Name="ToVideoMediaOrderTableBtn" FontSize="24" Margin="9" Click="ToVideoMediaOrderTableBtn_Click">Открыть страницу поставок</Button>
+        </StackPanel>
+
+    </Grid>
+</Page>

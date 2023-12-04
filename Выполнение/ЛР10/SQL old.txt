@@ -1,0 +1,129 @@
+Create Table User_type(
+ut_id tinyint identity(1,1) PRIMARY KEY, -- <255
+ut_name nvarchar(63)
+)
+
+Create Table User_(
+u_id int identity(1,1) primary key,
+ulogin nvarchar(63) NOT NULL,
+upassword nvarchar(63) NOT NULL,
+ut_id tinyint not null REFERENCES User_type(ut_id),
+isActive bit
+)
+
+Create Table Cinema(
+c_id int identity(1,1) PRIMARY KEY,
+c_name nvarchar(260), -- по самому длинному названию (129)
+c_description nvarchar(1023)
+)
+
+Create Table Genre(
+g_id tinyint identity(1,1) PRIMARY KEY, -- <255
+g_name nvarchar(63), -- по самому длинному названию (31)
+g_description nvarchar(511)
+)
+
+Create Table Cinema_Genre(
+c_id int NOT NULL REFERENCES Cinema(c_id), -- из Cinema
+g_id tinyint NOT NULL REFERENCES Genre(g_id), -- из Genre
+PRIMARY KEY (c_id, g_id)
+)
+
+-- тут я убрал страну короче
+Create Table Address_(
+a_id int Identity(1,1) PRIMARY KEY,
+a_locality nvarchar(127),
+a_street nvarchar(127),
+a_building nvarchar(63)
+)
+
+Create Table Employee(
+e_id int PRIMARY KEY,
+e_surname nvarchar(255) NOT NULL,
+e_name nvarchar(63),
+e_patronymic nvarchar(63),
+a_id int NOT NULL REFERENCES Address_(a_id),
+e_telNum char(18)  CHECK  (([e_telNum] like '+7 ([0-9][0-9][0-9]) [0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]')), --маска
+e_position nvarchar(63),
+e_salary float
+)
+
+Create Table Provider_(
+p_id int PRIMARY KEY,
+p_title nvarchar(100) NOT NULL,
+a_id int NOT NULL REFERENCES Address_(a_id),
+p_telNum char(18)  CHECK  (([p_telNum] like '+7 ([0-9][0-9][0-9]) [0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]')), --маска
+p_surname nvarchar(63) NOT NULL,
+p_name nvarchar(63),
+p_patronymic nvarchar(63)
+)
+
+Create Table Video_media_order( 
+vmo_id int PRIMARY KEY,
+vmo_tData date NOT NULL CONSTRAINT [DF_Test_TimeStamp] DEFAULT (GetDate()),
+vmo_tCompletionDate date,
+vmo_actualCompletionDate date,
+p_id int NOT NULL REFERENCES Provider_(p_id),
+e_id int NOT NULL REFERENCES Employee(e_id)
+)
+
+Create Table Video_media_type(
+vmt_id int PRIMARY KEY,
+vmt_name nvarchar(15),
+vmt_description nvarchar(127)
+)
+
+Create Table Video_media( -- НУЖНА ВОЗМОЖНОСТЬ РЕЗЕРВАЦИИ ОТ ПОСТОЯННЫХ КЛИЕНТОВ!
+vm_id int PRIMARY KEY,
+c_id int NOT NULL REFERENCES Cinema(c_id),
+vmo_id int NOT NULL REFERENCES Video_media_order(vmo_id),
+vmt_id int NOT NULL REFERENCES Video_media_type(vmt_id),
+vm_dailyRentPrice_noTypeEdit float,
+vm_durability tinyint CHECK (vm_durability in (0,2)), -- 0,1,2 
+vm_price float
+)
+
+
+Create Table Client_status(
+cs_id int PRIMARY KEY,
+cs_name nvarchar(63)
+)
+
+Create Table Client(
+cl_id int PRIMARY KEY,
+cl_surname nvarchar(63) NOT NULL,
+cl_name nvarchar(63),
+cl_patronymic nvarchar(63),
+a_id int NOT NULL REFERENCES Address_(a_id),
+cl_telNum char(18)  CHECK  (([cl_telNum] like '+7 ([0-9][0-9][0-9]) [0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]')), --маска
+cs_id int NOT NULL REFERENCES Client_status(cs_id),
+)
+
+-- Таблица для резервации от постоянных клиентов
+Create Table Reserv_VM(
+resVM_id int PRIMARY KEY,
+vm_id int NOT NULL REFERENCES Video_media(vm_id),
+cl_id int NOT NULL REFERENCES Client(cl_id)
+)
+
+Create Table Deal(
+d_id int PRIMARY KEY,
+e_id int NOT NULL REFERENCES Employee(e_id),
+cl_id int NOT NULL REFERENCES Client(cl_id),
+d_tDate date NOT NULL CONSTRAINT [DF_Test_TimeStamp] DEFAULT (GetDate()),
+d_tCompletionDate date,
+d_actualCompletionDate date
+)
+
+Create Table Deal_Video_media(
+vm_id int NOT NULL REFERENCES Video_media(vm_id),
+d_id int NOT NULL REFERENCES Deal(d_id),
+PRIMARY KEY(vm_id, d_id)
+)
+
+Create Table Penalty(
+pen_id int PRIMARY KEY,
+d_id int NOT NULL REFERENCES Deal(d_id),
+pen_description nvarchar(511),
+pen_ammount float
+)

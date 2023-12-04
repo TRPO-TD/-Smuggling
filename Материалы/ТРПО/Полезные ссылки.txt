@@ -1,0 +1,8 @@
+﻿Нормализация БД: https://info-comp.ru/database-normalization
+ASP NET https://metanit.com/sharp/aspnet5/
+https://metanit.com/sharp/aspnet6/
+
+Хостинги https://somee.com/
+https://beget.com/ru/hosting/free
+
+Промежуточное звено: WEB API (php/c#(ASP NET)). Погуглить что такое REST

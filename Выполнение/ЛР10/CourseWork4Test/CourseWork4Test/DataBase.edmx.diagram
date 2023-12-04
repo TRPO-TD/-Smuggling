@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="daa3ac432ea343fd8d15891b416e7bc1" Name="Diagram1">
+        <EntityTypeShape EntityType="courseWork4TRPO.Address_" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="courseWork4TRPO.Cinema" Width="1.5" PointX="5.25" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="courseWork4TRPO.Client" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="courseWork4TRPO.Client_status" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="courseWork4TRPO.Client_VM_applications" Width="1.5" PointX="5.25" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="courseWork4TRPO.Damage_penalty" Width="1.5" PointX="10.5" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="courseWork4TRPO.Deal" Width="1.5" PointX="8.25" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="courseWork4TRPO.Delay_penalty" Width="1.5" PointX="10.5" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="courseWork4TRPO.Employee" Width="1.5" PointX="3" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="courseWork4TRPO.Genre" Width="1.5" PointX="7.5" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="courseWork4TRPO.Provider_" Width="1.5" PointX="3" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="courseWork4TRPO.sysdiagrams" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="courseWork4TRPO.User_" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="courseWork4TRPO.User_type" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="courseWork4TRPO.Video_media" Width="1.5" PointX="7.5" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="courseWork4TRPO.Video_media_order" Width="1.5" PointX="5.25" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="courseWork4TRPO.Video_media_type" Width="1.5" PointX="5.25" PointY="18.25" IsExpanded="true" />
+        <AssociationConnector Association="courseWork4TRPO.FK__Client__a_id__6CD828CA" ManuallyRouted="false" />
+        <AssociationConnector Association="courseWork4TRPO.FK__Employee__a_id__56E8E7AB" ManuallyRouted="false" />
+        <AssociationConnector Association="courseWork4TRPO.FK__Provider___a_id__5AB9788F" ManuallyRouted="false" />
+        <AssociationConnector Association="courseWork4TRPO.FK__Video_medi__c_id__65370702" ManuallyRouted="false" />
+        <AssociationConnector Association="courseWork4TRPO.FK__Client__cs_id__6EC0713C" ManuallyRouted="false" />
+        <AssociationConnector Association="courseWork4TRPO.FK__Client_VM__cl_id__719CDDE7" ManuallyRouted="false" />
+        <AssociationConnector Association="courseWork4TRPO.FK__Deal__cl_id__756D6ECB" ManuallyRouted="false" />
+        <AssociationConnector Association="courseWork4TRPO.FK__Damage_pen__d_id__7FEAFD3E" ManuallyRouted="false" />
+        <AssociationConnector Association="courseWork4TRPO.FK__Deal__e_id__74794A92" ManuallyRouted="false" />
+        <AssociationConnector Association="courseWork4TRPO.FK__Delay_pena__d_id__7D0E9093" ManuallyRouted="false" />
+        <AssociationConnector Association="courseWork4TRPO.FK__Video_medi__e_id__607251E5" ManuallyRouted="false" />
+        <AssociationConnector Association="courseWork4TRPO.FK__Video_medi__p_id__5F7E2DAC" ManuallyRouted="false" />
+        <AssociationConnector Association="courseWork4TRPO.FK__User___ut_id__4A8310C6" ManuallyRouted="false" />
+        <AssociationConnector Association="courseWork4TRPO.FK__Video_med__vmo_i__662B2B3B" ManuallyRouted="false" />
+        <AssociationConnector Association="courseWork4TRPO.FK__Video_med__vmt_i__671F4F74" ManuallyRouted="false" />
+        <AssociationConnector Association="courseWork4TRPO.Cinema_Genre" ManuallyRouted="false" />
+        <AssociationConnector Association="courseWork4TRPO.Deal_Video_media" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,137 @@
+Create Table User_type(
+ut_id int,
+ut_name nvarchar(31)
+)
+
+Create Table User_(
+ulogin nvarchar(31),
+upassword nvarchar(31),
+ut_id int,
+isActive bit
+)
+
+Create Table Cinema(
+c_id int,
+c_name nvarchar(130),
+c_description nvarchar(500)
+
+)
+
+Create Table Genre(
+g_id int,
+g_name nvarchar(15),
+g_description nvarchar(500)
+
+)
+
+Create Table Cinema_Genre(
+c_id int,
+g_id int
+
+)
+
+Create Table Address_(
+a_id int,
+a_country nvarchar(50),
+a_locality nvarchar(50),
+a_street nvarchar(50),
+a_building nvarchar(25),
+
+)
+
+
+Create Table Employee(
+e_id int,
+e_surname nvarchar(50),
+e_name nvarchar(50),
+e_patronymic nvarchar(50),
+a_id int,
+e_telNum nvarchar(16),
+e_position nvarchar(50),
+e_salary float,
+
+)
+
+Create Table Provider_(
+p_id int,
+p_title nvarchar(100),
+a_id int,
+p_telNum nvarchar(16),
+p_surname nvarchar(50),
+p_name nvarchar(50),
+p_patronymic nvarchar(50),
+
+)
+
+Create Table Video_media_order(
+vmo_id int,
+vmo_tData date,
+vmo_tCompletionDate date,
+vmo_actualCompletionDate date,
+p_id int,
+e_id int
+
+)
+
+Create Table Video_media_type(
+vmt_id int,
+vmt_name nvarchar(10),
+vmt_description nvarchar(100)
+
+)
+
+Create Table Video_media(
+vm_id int,
+c_id int,
+vmo_id int,
+vmt_id int,
+vm_dailyRentPrice float,
+vm_durability tinyint,
+vm_price float
+
+-- îãğàíè÷åíèÿ è êëş÷è ïîòîì
+)
+
+
+Create Table Status_of_clients(
+cs_id int,
+cs_name nvarchar(40)
+
+)
+
+Create Table Client(
+cl_id int,
+cl_surname nvarchar(50),
+cl_name nvarchar(50),
+cl_patronymic nvarchar(50),
+a_id int,
+cl_telNum nvarchar(16),
+cs_id int,
+
+)
+
+Create Table Deal(
+d_id int,
+e_id int,
+cl_id int,
+d_tDate date,
+d_tCompletionDate date,
+d_actualCompletionDate date
+
+)
+
+Create Table Deal_Video_media(
+vm_id int,
+d_id int
+
+)
+
+Create Table Penalty(
+pen_id int,
+d_id int,
+pen_description nvarchar(400),
+pen_ammount float
+
+)
+ 
+×ÅĞÍÛÉ ÊÀÊ ÍÅÃĞ ÂÀĞÈÀÍò

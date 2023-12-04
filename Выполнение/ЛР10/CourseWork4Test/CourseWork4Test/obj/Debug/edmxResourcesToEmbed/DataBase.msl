@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище courseWork4TRPOContainer" CdmEntityContainer="courseWork4TRPOEntities">
+    <EntitySetMapping Name="Address_">
+      <EntityTypeMapping TypeName="courseWork4TRPO.Address_">
+        <MappingFragment StoreEntitySet="Address_">
+          <ScalarProperty Name="a_id" ColumnName="a_id" />
+          <ScalarProperty Name="a_locality" ColumnName="a_locality" />
+          <ScalarProperty Name="a_street" ColumnName="a_street" />
+          <ScalarProperty Name="a_building" ColumnName="a_building" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cinema">
+      <EntityTypeMapping TypeName="courseWork4TRPO.Cinema">
+        <MappingFragment StoreEntitySet="Cinema">
+          <ScalarProperty Name="c_id" ColumnName="c_id" />
+          <ScalarProperty Name="c_name" ColumnName="c_name" />
+          <ScalarProperty Name="c_description" ColumnName="c_description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Client">
+      <EntityTypeMapping TypeName="courseWork4TRPO.Client">
+        <MappingFragment StoreEntitySet="Client">
+          <ScalarProperty Name="cl_id" ColumnName="cl_id" />
+          <ScalarProperty Name="cl_surname" ColumnName="cl_surname" />
+          <ScalarProperty Name="cl_name" ColumnName="cl_name" />
+          <ScalarProperty Name="cl_patronymic" ColumnName="cl_patronymic" />
+          <ScalarProperty Name="a_id" ColumnName="a_id" />
+          <ScalarProperty Name="cl_telNum" ColumnName="cl_telNum" />
+          <ScalarProperty Name="cs_id" ColumnName="cs_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Client_status">
+      <EntityTypeMapping TypeName="courseWork4TRPO.Client_status">
+        <MappingFragment StoreEntitySet="Client_status">
+          <ScalarProperty Name="cs_id" ColumnName="cs_id" />
+          <ScalarProperty Name="cs_name" ColumnName="cs_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Client_VM_applications">
+      <EntityTypeMapping TypeName="courseWork4TRPO.Client_VM_applications">
+        <MappingFragment StoreEntitySet="Client_VM_applications">
+          <ScalarProperty Name="cvma_id" ColumnName="cvma_id" />
+          <ScalarProperty Name="cvma_name" ColumnName="cvma_name" />
+          <ScalarProperty Name="cl_id" ColumnName="cl_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Damage_penalty">
+      <EntityTypeMapping TypeName="courseWork4TRPO.Damage_penalty">
+        <MappingFragment StoreEntitySet="Damage_penalty">
+          <ScalarProperty Name="dmgp_id" ColumnName="dmgp_id" />
+          <ScalarProperty Name="d_id" ColumnName="d_id" />
+          <ScalarProperty Name="dmgp_ammount" ColumnName="dmgp_ammount" />
+          <ScalarProperty Name="dmgp_description" ColumnName="dmgp_description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Deal">
+      <EntityTypeMapping TypeName="courseWork4TRPO.Deal">
+        <MappingFragment StoreEntitySet="Deal">
+          <ScalarProperty Name="d_id" ColumnName="d_id" />
+          <ScalarProperty Name="e_id" ColumnName="e_id" />
+          <ScalarProperty Name="cl_id" ColumnName="cl_id" />
+          <ScalarProperty Name="d_tDate" ColumnName="d_tDate" />
+          <ScalarProperty Name="d_tCompletionDate" ColumnName="d_tCompletionDate" />
+          <ScalarProperty Name="d_cost" ColumnName="d_cost" />
+          <ScalarProperty Name="d_isCompleted" ColumnName="d_isCompleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Delay_penalty">
+      <EntityTypeMapping TypeName="courseWork4TRPO.Delay_penalty">
+        <MappingFragment StoreEntitySet="Delay_penalty">
+          <ScalarProperty Name="delp_id" ColumnName="delp_id" />
+          <ScalarProperty Name="d_id" ColumnName="d_id" />
+          <ScalarProperty Name="delp_ammount" ColumnName="delp_ammount" />
+          <ScalarProperty Name="delp_description" ColumnName="delp_description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employee">
+      <EntityTypeMapping TypeName="courseWork4TRPO.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="e_id" ColumnName="e_id" />
+          <ScalarProperty Name="e_surname" ColumnName="e_surname" />
+          <ScalarProperty Name="e_name" ColumnName="e_name" />
+          <ScalarProperty Name="e_patronymic" ColumnName="e_patronymic" />
+          <ScalarProperty Name="a_id" ColumnName="a_id" />
+          <ScalarProperty Name="e_telNum" ColumnName="e_telNum" />
+          <ScalarProperty Name="e_position" ColumnName="e_position" />
+          <ScalarProperty Name="e_salary" ColumnName="e_salary" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Genre">
+      <EntityTypeMapping TypeName="courseWork4TRPO.Genre">
+        <MappingFragment StoreEntitySet="Genre">
+          <ScalarProperty Name="g_id" ColumnName="g_id" />
+          <ScalarProperty Name="g_name" ColumnName="g_name" />
+          <ScalarProperty Name="g_description" ColumnName="g_description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Provider_">
+      <EntityTypeMapping TypeName="courseWork4TRPO.Provider_">
+        <MappingFragment StoreEntitySet="Provider_">
+          <ScalarProperty Name="p_id" ColumnName="p_id" />
+          <ScalarProperty Name="p_title" ColumnName="p_title" />
+          <ScalarProperty Name="a_id" ColumnName="a_id" />
+          <ScalarProperty Name="p_telNum" ColumnName="p_telNum" />
+          <ScalarProperty Name="p_surname" ColumnName="p_surname" />
+          <ScalarProperty Name="p_name" ColumnName="p_name" />
+          <ScalarProperty Name="p_patronymic" ColumnName="p_patronymic" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="courseWork4TRPO.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User_">
+      <EntityTypeMapping TypeName="courseWork4TRPO.User_">
+        <MappingFragment StoreEntitySet="User_">
+          <ScalarProperty Name="u_id" ColumnName="u_id" />
+          <ScalarProperty Name="ulogin" ColumnName="ulogin" />
+          <ScalarProperty Name="upassword" ColumnName="upassword" />
+          <ScalarProperty Name="ut_id" ColumnName="ut_id" />
+          <ScalarProperty Name="isActive" ColumnName="isActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User_type">
+      <EntityTypeMapping TypeName="courseWork4TRPO.User_type">
+        <MappingFragment StoreEntitySet="User_type">
+          <ScalarProperty Name="ut_id" ColumnName="ut_id" />
+          <ScalarProperty Name="ut_name" ColumnName="ut_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Video_media">
+      <EntityTypeMapping TypeName="courseWork4TRPO.Video_media">
+        <MappingFragment StoreEntitySet="Video_media">
+          <ScalarProperty Name="vm_id" ColumnName="vm_id" />
+          <ScalarProperty Name="c_id" ColumnName="c_id" />
+          <ScalarProperty Name="vmo_id" ColumnName="vmo_id" />
+          <ScalarProperty Name="vmt_id" ColumnName="vmt_id" />
+          <ScalarProperty Name="vm_dailyRentPrice" ColumnName="vm_dailyRentPrice" />
+          <ScalarProperty Name="vm_durability" ColumnName="vm_durability" />
+          <ScalarProperty Name="vm_price" ColumnName="vm_price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Video_media_order">
+      <EntityTypeMapping TypeName="courseWork4TRPO.Video_media_order">
+        <MappingFragment StoreEntitySet="Video_media_order">
+          <ScalarProperty Name="vmo_id" ColumnName="vmo_id" />
+          <ScalarProperty Name="vmo_tData" ColumnName="vmo_tData" />
+          <ScalarProperty Name="vmo_tCompletionDate" ColumnName="vmo_tCompletionDate" />
+          <ScalarProperty Name="p_id" ColumnName="p_id" />
+          <ScalarProperty Name="e_id" ColumnName="e_id" />
+          <ScalarProperty Name="vmo_isCompleted" ColumnName="vmo_isCompleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Video_media_type">
+      <EntityTypeMapping TypeName="courseWork4TRPO.Video_media_type">
+        <MappingFragment StoreEntitySet="Video_media_type">
+          <ScalarProperty Name="vmt_id" ColumnName="vmt_id" />
+          <ScalarProperty Name="vmt_name" ColumnName="vmt_name" />
+          <ScalarProperty Name="vmt_description" ColumnName="vmt_description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="Cinema_Genre" TypeName="courseWork4TRPO.Cinema_Genre" StoreEntitySet="Cinema_Genre">
+      <EndProperty Name="Cinema">
+        <ScalarProperty Name="c_id" ColumnName="c_id" />
+      </EndProperty>
+      <EndProperty Name="Genre">
+        <ScalarProperty Name="g_id" ColumnName="g_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Deal_Video_media" TypeName="courseWork4TRPO.Deal_Video_media" StoreEntitySet="Deal_Video_media">
+      <EndProperty Name="Video_media">
+        <ScalarProperty Name="vm_id" ColumnName="vm_id" />
+      </EndProperty>
+      <EndProperty Name="Deal">
+        <ScalarProperty Name="d_id" ColumnName="d_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="Хранилище courseWork4TRPO.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="Хранилище courseWork4TRPO.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="Хранилище courseWork4TRPO.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="Хранилище courseWork4TRPO.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="courseWork4TRPO.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="Хранилище courseWork4TRPO.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="courseWork4TRPO.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="Хранилище courseWork4TRPO.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="Хранилище courseWork4TRPO.sp_upgraddiagrams" />
+  </EntityContainerMapping>
+</Mapping>

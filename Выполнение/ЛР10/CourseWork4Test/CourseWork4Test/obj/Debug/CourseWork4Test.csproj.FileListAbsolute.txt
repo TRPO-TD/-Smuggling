@@ -1,0 +1,233 @@
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\bin\Debug\CourseWork4Test.exe.config
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\bin\Debug\CourseWork4Test.exe
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\bin\Debug\CourseWork4Test.pdb
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\bin\Debug\EntityFramework.dll
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\bin\Debug\EntityFramework.xml
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\MainWindow.g.cs
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Client-EmployeePicker.g.cs
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\App.g.cs
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\CourseWork4Test_Content.g.cs
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\CourseWork4Test_MarkupCompile.cache
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\CourseWork4Test_MarkupCompile.lref
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\MainWindow.baml
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Client-EmployeePicker.baml
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\CourseWork4Test.g.resources
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\CourseWork4Test.Properties.Resources.resources
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\CourseWork4Test.csproj.GenerateResource.cache
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\CourseWork4Test.csproj.CoreCompileInputs.cache
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\CourseWork4Test.csproj.CopyComplete
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\CourseWork4Test.exe
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\CourseWork4Test.pdb
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Client\ClientMainPage.g.cs
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Client\ClientMoreInfo.g.cs
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Client\ClientMainPage.baml
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Client\ClientMoreInfo.baml
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Client\ClientQuestions.g.cs
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Client\ClientVideoMedia.g.cs
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Client\ClientQuestions.baml
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Client\ClientVideoMedia.baml
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Employees\EmpLoginScreen.g.cs
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Employees\EmpLoginScreen.baml
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Employees\SalesManagerMain.g.cs
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Employees\WHmanagerMain.g.cs
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Employees\SalesManagerMain.baml
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Employees\WHmanagerMain.baml
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\Cinema.g.cs
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\Client.g.cs
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\ProviderPage.g.cs
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\VideoMedia.g.cs
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\VideoMediaOrder.g.cs
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\Cinema.baml
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\Client.baml
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\ProviderPage.baml
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\VideoMedia.baml
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\VideoMediaOrder.baml
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\bin\Debug\cs-CZ\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\bin\Debug\ja-JP\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\bin\Debug\nl-BE\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\CreateDeal.g.cs
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\CreateDeal.baml
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Employees\AdministratorMain.g.cs
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Employees\AdministratorMain.baml
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\AddressPage.g.cs
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\AddressPage.baml
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\AvaibleVMPage.g.cs
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\AvaibleVMPage.baml
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\PenaltiesPage.g.cs
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\PenaltiesPage.baml
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\CourseWork4Test.csproj.AssemblyReference.cache
+C:\Users\timag\source\repos\CourseWork4Test\CourseWork4Test\obj\Debug\CourseWork4Test.csproj.SuggestedBindingRedirects.cache
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\CourseWork4Test.exe.config
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\CourseWork4Test.exe
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\CourseWork4Test.pdb
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\EntityFramework.dll
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\EntityFramework.SqlServer.dll
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\Xceed.Wpf.AvalonDock.dll
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\Xceed.Wpf.Toolkit.dll
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\EntityFramework.xml
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\EntityFramework.SqlServer.xml
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\ru\EntityFramework.resources.dll
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\cs-CZ\Xceed.Wpf.AvalonDock.resources.dll
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\ja-JP\Xceed.Wpf.AvalonDock.resources.dll
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\nl-BE\Xceed.Wpf.AvalonDock.resources.dll
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\CourseWork4Test.csprojAssemblyReference.cache
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\MainWindow.g.cs
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Client-EmployeePicker.g.cs
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Client\ClientMainPage.g.cs
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Client\ClientMoreInfo.g.cs
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Client\ClientQuestions.g.cs
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Client\ClientVideoMedia.g.cs
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\AddressPage.g.cs
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\AvaibleVMPage.g.cs
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\Cinema.g.cs
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\Client.g.cs
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\CreateDeal.g.cs
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\PenaltiesPage.g.cs
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\ProviderPage.g.cs
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\VideoMedia.g.cs
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\VideoMediaOrder.g.cs
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Employees\AdministratorMain.g.cs
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Employees\EmpLoginScreen.g.cs
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Employees\SalesManagerMain.g.cs
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Employees\WHmanagerMain.g.cs
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\App.g.cs
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\CourseWork4Test_Content.g.cs
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\CourseWork4Test_MarkupCompile.cache
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\CourseWork4Test_MarkupCompile.lref
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\MainWindow.baml
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Client-EmployeePicker.baml
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Client\ClientMainPage.baml
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Client\ClientMoreInfo.baml
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Client\ClientQuestions.baml
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Client\ClientVideoMedia.baml
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\AddressPage.baml
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\AvaibleVMPage.baml
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\Cinema.baml
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\Client.baml
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\CreateDeal.baml
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\PenaltiesPage.baml
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\ProviderPage.baml
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\VideoMedia.baml
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\VideoMediaOrder.baml
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Employees\AdministratorMain.baml
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Employees\EmpLoginScreen.baml
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Employees\SalesManagerMain.baml
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Employees\WHmanagerMain.baml
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\CourseWork4Test.g.resources
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\CourseWork4Test.Properties.Resources.resources
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\CourseWork4Test.csproj.GenerateResource.cache
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\CourseWork4Test.csproj.CoreCompileInputs.cache
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\CourseWork4Test.csproj.CopyComplete
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\CourseWork4Test.exe
+E:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\CourseWork4Test.pdb
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\CourseWork4Test.exe.config
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\CourseWork4Test.exe
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\CourseWork4Test.pdb
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\EntityFramework.dll
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\EntityFramework.SqlServer.dll
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\Xceed.Wpf.AvalonDock.dll
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\Xceed.Wpf.Toolkit.dll
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\EntityFramework.xml
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\EntityFramework.SqlServer.xml
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\ru\EntityFramework.resources.dll
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\cs-CZ\Xceed.Wpf.AvalonDock.resources.dll
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\ja-JP\Xceed.Wpf.AvalonDock.resources.dll
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\nl-BE\Xceed.Wpf.AvalonDock.resources.dll
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\MainWindow.g.cs
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Client-EmployeePicker.g.cs
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Client\ClientMainPage.g.cs
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Client\ClientMoreInfo.g.cs
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Client\ClientQuestions.g.cs
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Client\ClientVideoMedia.g.cs
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\AddressPage.g.cs
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\AvaibleVMPage.g.cs
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\Cinema.g.cs
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\Client.g.cs
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\CreateDeal.g.cs
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\PenaltiesPage.g.cs
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\ProviderPage.g.cs
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\VideoMedia.g.cs
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\VideoMediaOrder.g.cs
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Employees\AdministratorMain.g.cs
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Employees\EmpLoginScreen.g.cs
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Employees\SalesManagerMain.g.cs
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Employees\WHmanagerMain.g.cs
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\App.g.cs
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\CourseWork4Test_Content.g.cs
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\CourseWork4Test_MarkupCompile.cache
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\CourseWork4Test_MarkupCompile.lref
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\MainWindow.baml
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Client-EmployeePicker.baml
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Client\ClientMainPage.baml
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Client\ClientMoreInfo.baml
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Client\ClientQuestions.baml
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Client\ClientVideoMedia.baml
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\AddressPage.baml
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\AvaibleVMPage.baml
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\Cinema.baml
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\Client.baml
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\CreateDeal.baml
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\PenaltiesPage.baml
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\ProviderPage.baml
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\VideoMedia.baml
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\DBTables\VideoMediaOrder.baml
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Employees\AdministratorMain.baml
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Employees\EmpLoginScreen.baml
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Employees\SalesManagerMain.baml
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\Pages\Employees\WHmanagerMain.baml
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\CourseWork4Test.g.resources
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\CourseWork4Test.Properties.Resources.resources
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\CourseWork4Test.csproj.GenerateResource.cache
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\CourseWork4Test.csproj.CoreCompileInputs.cache
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\CourseWork4Test.csproj.CopyComplete
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\CourseWork4Test.exe
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\CourseWork4Test.pdb
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\CourseWork4Test.csproj.AssemblyReference.cache
+F:\4 курс\ТРПО\Выполнение\ЛР10\CourseWork4Test\CourseWork4Test\obj\Debug\CourseWork4Test.csproj.SuggestedBindingRedirects.cache
